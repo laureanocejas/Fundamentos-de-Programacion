@@ -1,5 +1,7 @@
 Proceso Ejercicio02
 	//Ordenamiento por insercion
+	
+	//Defincion de variables
 	Definir  num Como Entero;
 	Dimensionar num[5];
 	Definir i,pos,aux Como Entero;

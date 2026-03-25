@@ -18,6 +18,7 @@ Proceso Ejercicio01
 	Escribir "Digite otro numero:";
 	Leer num2;
 	resultado<-sumar(num1,num2);//opcion2
+	
 	//Salida de datos
 	Escribir "El resultado de la suma es: ",sumar(num1,num2);//llamada o invocar a la funcion, con sus argumentos
 	Escribir "El resultado de la suma con variable aux: ",resultado;

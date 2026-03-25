@@ -1,12 +1,12 @@
 
 //Procedimiento
-SubProceso mitad(num)
-	Definir m Como Real;
-	m<-num/2;
-	Escribir "La mitad del numero es: ",m;
+SubProceso mitad(num Por Referencia)
+	num<-num/2;
+	Escribir "La mitad del numero es: ",num;
 	
 FinSubProceso
 
+//Programa principal
 Proceso Ejercicio02
 	//Realizar un procedimiento que me permita realizar el calculo de la mitad de un numero real
 	

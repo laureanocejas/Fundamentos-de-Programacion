@@ -10,6 +10,7 @@ FinSubProceso
 SubProceso generarNombre(nombre por referencia)
 	Definir i,tamanio Como entero;
 	tamanio<-Longitud(nombre);
+	
 	// Dibujamos la línea de asteriscos arriba
 	Para i<-0 Hasta tamanio-1 Con Paso 1 Hacer
 		Escribir sin saltar "*";

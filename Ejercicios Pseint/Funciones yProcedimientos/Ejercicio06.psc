@@ -7,19 +7,20 @@ SubProceso cambioDivisas
 	Repetir
 		Escribir "--------------MENU--------------:";
 		Escribir "Eliga el cambio de divisa que desea:";
-		Escribir "1)Dolar";
-		Escribir "2)Pesos";
+		Escribir "1) Dolar a Pesos";
+		Escribir "2) Pesos a Dolar";
+		Escribir "3) Terminar";
 		Escribir "Ingrese la opcion:";
 		Leer opcion;
 		Segun (opcion) Hacer//salida de datos
 			1:
 				Escribir "Ingrese un monto en dolar:";
 				Leer moneda;
-				Escribir "EL equivalente a pesos es: ",cambioPesos(moneda);
+				Escribir "EL equivalente a pesos es: $",cambioPesos(moneda);
 			2:
 				Escribir "Ingrese un monto en pesos:";
 				Leer moneda;
-				Escribir "EL equivalente a dolar es: ",cambioDolar(moneda);
+				Escribir "EL equivalente a dolar es: U$D",cambioDolar(moneda);
 			3:
 				
 			De Otro Modo:
