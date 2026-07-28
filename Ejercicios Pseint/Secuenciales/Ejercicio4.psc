@@ -7,17 +7,20 @@ Algoritmo Ejercicio4
 	
 	//Definir variables
 	Definir A,B,C,total,hs,min Como Entero;
+	
 	//Entrada de datos
-	Escribir "Ingrese la cantidad de examenes de tipo A desea evaluar:";
+	Escribir "Ingrese la cantidad de examenes de tipo A que desea evaluar:";
 	Leer A;
-	Escribir "Ingrese la cantidad de examenes de tipo B desea evaluar:";
+	Escribir "Ingrese la cantidad de examenes de tipo B que desea evaluar:";
 	Leer B;
-	Escribir "Ingrese la cantidad de examenes de tipo C desea evaluar:";
+	Escribir "Ingrese la cantidad de examenes de tipo C que desea evaluar:";
 	Leer C;
+	
 	//Proceso
 	total<-A*5+B*8+C*3;
 	hs<-trunc(total/60);
-	min<-total-(hs*60);
+	min <- total MOD 60;//min<-total-(hs*60);
+	
 	//Salida de datos
 	Escribir "El tiempo que tardara en evaluar es: ",hs," hs y ",min," minutos";
 	
