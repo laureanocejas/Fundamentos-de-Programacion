@@ -1,9 +1,15 @@
 Algoritmo Ejercicio12
 		//Elaborar un programa que me muestre los dias de la semana cuando ingrese los siete primeros numeros
+	
+	//Definicion de variables
 	Definir numDia Como Entero;
 	Definir diaSemana como cadena;
+	
+	//Entrada de datos
 	Escribir "Ingrese un numero del dia de la semana que desea(1-7):)";
 	Leer numDia;
+	
+	//Proceso con if anidados
 	si(numDia==1) Entonces
 		diaSemana<-"Lunes";
 	SiNo
@@ -33,6 +39,8 @@ Algoritmo Ejercicio12
 			FinSi
 		FinSi
 	FinSi
+	
+	//Salida de datos
 	si(diaSemana=="ERROR") Entonces
 		Escribir "Error-opcion no valida";
 	SiNo
@@ -40,7 +48,7 @@ Algoritmo Ejercicio12
 	FinSi
 	
 	
-	//Segunda solucion recomendada
+	//Segunda solucion recomendada-Swicth
 	Segun (numDia) Hacer
 		1:
 			diaSemana<-"Lunes";
@@ -59,6 +67,7 @@ Algoritmo Ejercicio12
 		De Otro Modo:
 			diaSemana<- "ERROR";
 	FinSegun
+	
 	si(diaSemana=="ERROR") Entonces
 		Escribir "Error-opcion no valida";
 	SiNo

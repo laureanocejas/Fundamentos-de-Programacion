@@ -1,9 +1,14 @@
 Algoritmo Ejercicio16
 	//Escribir un algoritmo que selecione una operacion de cuatro operaciones 
 	//numericas disponibles, una vez seleccionada , introducir dos numeros y ejecutar la operacion
+	
 	//Definicion de variables
 	Definir operacion Como Entero;
 	Definir num1,num2,resultado como real;
+	Definir esValido Como Logico;
+	// Inicializamos la bandera (Asumimos que todo estará bien)
+	esValido <- Verdadero;
+	
 	//Ingreso de datos
 	Escribir "MENU";
 	Escribir "1-Suma";
@@ -13,14 +18,16 @@ Algoritmo Ejercicio16
 	Escribir "--------------";
 	Escribir "Eliga la operacion que desea realizar:";
 	Leer operacion;
+	
 	si(operacion>=1 Y operacion<=4) Entonces
 		Escribir "--------------";
 		Escribir "Ingrese el primer numero:";
 		Leer num1;
 		Escribir "Ingrese el segundo numero:";
 		Leer num2;
+		
 		//Proceso
-		Segun (operacion)
+		Segun (operacion) Hacer
 			1:
 				resultado<-num1+num2;
 			2:
@@ -32,12 +39,16 @@ Algoritmo Ejercicio16
 					resultado<-num1/num2;
 				SiNo
 					Escribir "Error no se puede dividir por cero";
+					esValido <- Falso; // <-- ¡APAGAMOS EL INTERRUPTOR!
 				FinSi
 		FinSegun	
+		
 		//Salida de datos
-		Escribir "El resultado de la operacion eligida es: ",resultado;
+		Si (esValido) Entonces
+			Escribir "El resultado es: ", resultado;
+		FinSi
 	SiNo
 		Escribir "Error opcion de menu invalida";
 	FinSi
-	
+
 FinAlgoritmo

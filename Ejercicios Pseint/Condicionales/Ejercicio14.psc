@@ -1,16 +1,19 @@
 Algoritmo Ejercicio14
-	//Ingresar por teclado el suedo de un empleado considerando su categoria y su porcentaje de aumento 
-	//mostrar por pantalla el suedo a pagar considerando el aumento segun la categoria
+	//Ingresar por teclado el sueldo de un empleado considerando su categoria y su porcentaje de aumento 
+	//mostrar por pantalla el sueldo a pagar considerando el aumento segun la categoria
 	
+	//Definicion de variables
 	Definir cat Como Entero;
 	Definir sueldo,nuevoSueldo, aumento Como Real;
 	
-	Escribir "Ingrese el suedo:";
+	//Entradas de datos
+	Escribir "Ingrese el sueldo:";
 	Leer sueldo;
 	Escribir "Ingrese la categoria:";
 	Leer cat;
 	
-	Segun Cat Hacer
+	//Proceso
+	Segun cat Hacer
 		1:
 			aumento<-(0.15*sueldo);
 		2:
@@ -21,12 +24,17 @@ Algoritmo Ejercicio14
 			aumento<-(0.07*sueldo);
 		De Otro Modo:
 			
-			aumento<-0;
-			Escribir "Lo sentimos Usted no tiene aumento";
+			aumento<--1;
+			
 	Fin Segun
-	nuevoSueldo=sueldo+aumento;
 	
-	Escribir "El aumento de su sueldo es de: ",aumento;
-	Escribir "El sueldo final es de: ",nuevoSueldo;
+	//Salida de datos
+	Si (aumento==-1) Entonces
+		Escribir "Error: La categoría ingresada no existe. No se aplican aumentos.";
+	SiNo
+		nuevoSueldo <- redon((sueldo + aumento) * 100) / 100;
+		Escribir "El aumento de su sueldo es de: $", aumento;
+		Escribir "El sueldo final es de: $", nuevoSueldo;
+	FinSi
 	
 FinAlgoritmo
