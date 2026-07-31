@@ -6,9 +6,9 @@ Algoritmo Ejercicio19
 	Definir dia, mes Como Entero;
 	
 	//Entrada de datos
-	Escribir ("Ingrese el mes(1-12):");
+	Escribir ("Ingrese el numero del mes(1-12):");
 	Leer mes;
-	Escribir ("Ingrese el numero de dia(1-31):");
+	Escribir ("Ingrese el numero del dia:");
 	Leer dia;
 	
 	//Proceso y salida de datos
