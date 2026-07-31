@@ -3,13 +3,16 @@ Algoritmo Ejercicio02
 	//que se encuentran comprendidos entre 1 y 10
 	
 	//Defincion de variable
-	Definir resultado Como Entero;
+	Definir resultado Como real;
+	Definir i Como Entero;
 	resultado<-0;
 	Escribir "Potencias de 2 de los números impares entre 1 y 10:";
     Escribir "--------------------------------------------------";
-	//Ingreso de datos y proceso
+	
+	//Proceso
 	Para i<-1 Hasta 10 Con Paso 2 Hacer
 		resultado<-i^2;
+		
 		//Salida de datos
 		Escribir "El número ", i, " elevado al cuadrado es: ", resultado;	
 	FinPara

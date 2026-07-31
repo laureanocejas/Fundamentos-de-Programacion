@@ -3,17 +3,24 @@ Algoritmo Ejercicio04
 	//y el producto
 	
 	//Defincion de variable
-	Definir num,producto Como Entero;
-	producto<-0;
-	//Ingreso de datos
-	Escribir "Ingrese el numero de la tabla de multipliacion que desea obtener: ";
+	Definir num,producto,i Como Entero;
+	
+	
+	//Entrada de datos
+	Escribir "Ingrese el numero de la tabla de multiplicacion que desea obtener: ";
 	Leer num;
-	Escribir "Tabla del ", num, ":";
-    Escribir "---------------";
+	
+	
 	//Proceso y salida de datos
-	Para i<-1 Hasta 10 Con Paso 1 Hacer
-		producto<-i*num;
-		Escribir i," x ",num," = ",producto;
-	Fin Para
+	Si num>0 Y num<=10 Entonces
+		Escribir "Tabla del ", num, ":";
+		Escribir "---------------";
+		Para i<-1 Hasta 10 Con Paso 1 Hacer
+			producto<-i*num;
+			Escribir num," x ",i," = ",producto;
+		Fin Para
+	SiNo
+		Escribir "Error: Por favor ingrese un número entre 1 y 10.";
+	FinSi
 	
 FinAlgoritmo

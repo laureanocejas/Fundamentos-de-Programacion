@@ -3,19 +3,21 @@ Algoritmo Ejercicio09
 	//1 y 50
 	
 	//Definicion de variable
-	Definir num,sumpar,sumimpar,i Como Entero;
-	sumpar<-0;
-	sumimpar<-0;
+	Definir sumPar,sumImpar,i Como Entero;
+	sumPar<-0;
+	sumImpar<-0;
+	
 	//Proceso
 	Para i<-1 Hasta 50 Con Paso 1 Hacer
 		si(i MOD 2 ==0) Entonces
-			sumpar<-sumpar+i;
+			sumPar<-sumPar+i;
 		SiNo
-			sumimpar<-sumimpar+i;
+			sumImpar<-sumImpar+i;
 		FinSi
 	Fin Para
+	
 	//Salida de datos
-	Escribir "La totalidad de los numeros pares es: ",sumpar;
-	Escribir "La totalidad de los numeros impares es: ",sumimpar;
+	Escribir "La totalidad de los numeros pares es: ",sumPar;
+	Escribir "La totalidad de los numeros impares es: ",sumImpar;
 	
 FinAlgoritmo

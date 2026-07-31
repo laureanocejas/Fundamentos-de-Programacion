@@ -4,14 +4,18 @@ Algoritmo Ejercicio01
 	
 	//Definicion de variables
 	Definir num,sum Como Entero;
+	Definir i Como Entero;
 	sum<-0;
-	//Ingreso de datos y Proceso
+	
+	//Proceso y entrada de datos	
 	Para i<-1 Hasta 5 Con Paso 1 Hacer
 		Escribir i,"-Ingrese un numero";
 		Leer num;
 		sum<-sum+num;
 	Fin Para
+	
 	//Salida de datos
+	Escribir "--------------------------------------------";
 	Escribir "La suma de los valores ingresados es: ",sum;
 	
 FinAlgoritmo

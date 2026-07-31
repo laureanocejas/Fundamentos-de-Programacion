@@ -6,11 +6,13 @@ Algoritmo Ejercicio07
 	//Definicion de variable 
 	Definir multiplo5,sum,i Como Entero;
 	sum<-0;
+	
 	//Proceso
 	Para i<-1 Hasta 20 Con Paso 1 Hacer
 		multiplo5<-5*i;
 		sum<-sum+multiplo5;
 	Fin Para
+	
 	//Salida de datos
 	Escribir "La sumatoria de los numeros multiplo de 5 comprendido entre 1 a 100 es: ",sum;
 	
